@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap');
+
+.card {
+  background-color: rgba(240, 248, 255, 0.9); /* Light Blue (AliceBlue) */
+  border-radius: 15px;
+  box-sizing: border-box;
+  min-width: 400px;  /* Minimum width */
+  max-width: 450px;  /* Maximum width */
+  min-height: 400px;  /* Minimum height */
+  max-height: 800px;  /* Maximum height before scrolling */
+  word-wrap: normal;
+  white-space: normal;
+  overflow-y: auto;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px rgba(0, 0, 255, 0.2); /* Soft blue shadow */
+  transition: transform 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  background: linear-gradient(to bottom, rgba(173, 216, 230, 0.7), rgba(240, 248, 255, 0.9)); /* Light Sky Blue Gradient */
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar { display: none; }
+
+.card-image {
+  width: 320px;
+  overflow: hidden;
+  height: 170px;
+  border-radius: 10px;
+  background-color: rgba(173, 216, 230, 0.6); /* Light Sky Blue */
+  box-sizing: border-box;
+  margin: 30px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-content {
+  background-color: transparent;
+  border-radius: 2px;
+  box-sizing: border-box;
+  overflow: auto;
+  height: 300px;
+  width: 320px;
+  margin: 30px auto;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px;
+  color: #004080; /* Deep Blue */
+  font-family: 'Pacifico', cursive; /* Handwritten stylish font */
+}
+
+.card-description {
+  font-size: 16px;
+  color: #003366; /* Dark Blue */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.card-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Button Design */
+.butt {
+  background-color: rgba(135, 206, 250, 0.8); /* Light Sky Blue */
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 40px;
+  width: 120px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #004080; /* Deep Blue */
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.butt:hover {
+  background: linear-gradient(to bottom, rgba(173, 216, 230, 0.9), rgba(240, 248, 255, 0.9)); /* Gradient Effect */
+  transform: scale(1.06);
+  color: #001f4d; /* Darker Blue */
+  box-shadow: 3px 3px 10px rgba(0, 0, 255, 0.3);
+}

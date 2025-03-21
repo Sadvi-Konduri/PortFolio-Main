@@ -1,0 +1,17 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animated-gif {
+  width: 400px;
+ 
+}
+.knowme {
+  animation: fadeIn 2s;
+  background: linear-gradient(to bottom, rgba(70, 47, 47, 0.5), rgba(89, 85, 133, 0.5));
+}

@@ -1,0 +1,48 @@
+.skill{
+  
+ 
+  margin-right: 150px;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(4, 174, 235, 0.5), rgba(89, 85, 133, 0.5));
+  
+   
+ }
+ .skill-set{
+   background: linear-gradient(to bottom, rgba(162, 120, 120, 0.5), rgba(89, 85, 133, 0.5));
+   margin-left: 100%;
+ }
+ .contact{
+   animation: fadeIn 2s;
+ 
+   cursor: pointer;
+   gap: 10px;
+  
+   
+ }
+ 
+ 
+ .butt{
+   animation: fadeIn 2s;
+   background: linear-gradient(to bottom, rgba(237, 64, 64, 0.5), rgba(21, 2, 225, 0.5));
+   cursor: pointer;
+   
+ }
+ .butt:hover{
+   background:linear-gradient(to bottom, rgba(204, 38, 233, 0.5), rgba(18, 2, 186, 0.5));
+   transform: scale(1.06);
+ }
+ 
+ .skills{
+   justify-content: center;
+   margin-top: -400px;
+   
+   display: grid;
+   gap: 40px;
+   overflow: auto;
+   justify-content: space-around;
+   
+ 
+   grid-template-columns: 180px 180px 180px auto  ;
+ }
+ 
+ 
