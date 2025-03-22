@@ -48,11 +48,6 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/sadvi-konduri-579b64299/" target="_blank" rel="noopener noreferrer">
             <BsLinkedin size="26px" color="#1DA1F2" className="social-icon" />
           </a>
-
-          <a href="https://leetcode.com/u/Sadvi_konduri/" target="_blank" rel="noopener noreferrer">
-            <BsInstagram size="26px" color="#E1306C" className="social-icon" />
-          </a>
-
           <a href="https://github.com/Sadvi-Konduri" target="_blank" rel="noopener noreferrer">
             <BsGithub size="26px" color="white" className="social-icon" />
           </a>

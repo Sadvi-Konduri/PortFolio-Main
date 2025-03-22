@@ -1,48 +1,61 @@
-.skill{
-  
- 
-  margin-right: 150px;
+.skill {
+  margin-right: 100px;
   align-items: center;
-  background: linear-gradient(to bottom, rgba(4, 174, 235, 0.5), rgba(89, 85, 133, 0.5));
-  
-   
- }
- .skill-set{
-   background: linear-gradient(to bottom, rgba(162, 120, 120, 0.5), rgba(89, 85, 133, 0.5));
-   margin-left: 100%;
- }
- .contact{
-   animation: fadeIn 2s;
- 
-   cursor: pointer;
-   gap: 10px;
-  
-   
- }
- 
- 
- .butt{
-   animation: fadeIn 2s;
-   background: linear-gradient(to bottom, rgba(237, 64, 64, 0.5), rgba(21, 2, 225, 0.5));
-   cursor: pointer;
-   
- }
- .butt:hover{
-   background:linear-gradient(to bottom, rgba(204, 38, 233, 0.5), rgba(18, 2, 186, 0.5));
-   transform: scale(1.06);
- }
- 
- .skills{
-   justify-content: center;
-   margin-top: -400px;
-   
-   display: grid;
-   gap: 40px;
-   overflow: auto;
-   justify-content: space-around;
-   
- 
-   grid-template-columns: 180px 180px 180px auto  ;
- }
- 
- 
+  background: linear-gradient(to bottom, rgba(25, 118, 210, 0.7), rgba(13, 71, 161, 0.7)); 
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.skill-set {
+  background: linear-gradient(to bottom, rgba(255, 87, 34, 0.7), rgba(183, 28, 28, 0.7)); 
+  margin-left: auto;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.contact {
+  animation: fadeIn 2s;
+  cursor: pointer;
+  gap: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact:hover {
+  transform: scale(1.05);
+}
+
+.butt {
+  animation: fadeIn 2s;
+  background: linear-gradient(to bottom, rgba(76, 175, 80, 0.8), rgba(27, 94, 32, 0.8)); 
+  cursor: pointer;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.butt:hover {
+  background: linear-gradient(to bottom, rgba(139, 195, 74, 0.8), rgba(56, 142, 60, 0.8)); 
+  transform: scale(1.08);
+}
+
+.skills {
+  display: grid;
+  gap: 40px;
+  margin-top: -250px;
+  overflow: auto;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

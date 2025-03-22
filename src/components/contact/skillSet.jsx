@@ -17,9 +17,6 @@ const skillSet = () => {
     { icon: FaGitAlt },
     { icon: SiTailwindcss },
     { icon: SiJavascript },
-  
-    
-    
   ]
   return (
 

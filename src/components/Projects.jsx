@@ -3,6 +3,7 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import CardDemo from "./Card";
 import threads from "../assets/threads.jpg";
 import food from "../assets/Bank.jpg";
+import xclone from "../assets/xclone.jpg";
 
 const Projects = () => {
   const projects = [
@@ -15,11 +16,19 @@ const Projects = () => {
       demolink: "",
     },
     {
-      imgUrl: food,
+      imgUrl: xclone,
       title: "Bank Managnement System",
       Description:
-        "Developed a MERN stack Twitter-like Social Media Application with user authentication, posts, comments, likes, followers, and real-time notifications.",
+        "Developed a Bank Management System with HTML, CSS, JavaScript, JSP, JDBC, and Oracle, enabling secure authentication, transactions, and data management.",
       gitlink: "https://github.com/Sadvi-Konduri/Bank",
+      demolink: "",
+    },
+    {
+      imgUrl: food,
+      title: "XClone",
+      Description:
+        "Developed a MERN stack Twitter-like Social Media Application with user authentication, posts, comments, likes, followers, and real-time notifications in a group project.",
+      gitlink: "https://github.com/Sadvi-Konduri/xclone",
       demolink: "",
     },
   ];

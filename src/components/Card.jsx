@@ -15,9 +15,6 @@ const CardDemo = ({imgUrl, title, Description, gitlink, demolink}) => {
             <Link href={gitlink} isExternal>
               <Button className="butt" color={"white"}>GitHub Repo</Button>
             </Link>
-            <Link href={demolink} isExternal>
-              <Button className="butt" color={"white"}>Live Demo</Button>
-            </Link>
           </Flex>
         </Box>
      </Box> 
