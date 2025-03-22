@@ -16,7 +16,7 @@ const Projects = () => {
       demolink: "",
     },
     {
-      imgUrl: xclone,
+      imgUrl: food,
       title: "Bank Managnement System",
       Description:
         "Developed a Bank Management System with HTML, CSS, JavaScript, JSP, JDBC, and Oracle, enabling secure authentication, transactions, and data management.",
@@ -24,7 +24,7 @@ const Projects = () => {
       demolink: "",
     },
     {
-      imgUrl: food,
+      imgUrl: xclone,
       title: "XClone",
       Description:
         "Developed a MERN stack Twitter-like Social Media Application with user authentication, posts, comments, likes, followers, and real-time notifications in a group project.",
