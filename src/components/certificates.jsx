@@ -20,12 +20,12 @@ const Certificates = () => {
       description: "Certified by AWS",
       certLink: AWS,
     },
-    
+
     {
       imgUrl: cert5,
       title: "Bronze Certification",
       description: "Certified by Smart Interviews.",
-      certLink: mern,
+      certLink: smart,
     },
     {
       imgUrl: cert1,
