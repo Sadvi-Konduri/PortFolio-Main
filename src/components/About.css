@@ -1,27 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&family=Montserrat:wght@400;600&display=swap');
 
+/* Background Section */
 .myself {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(173, 216, 230, 0.85)), 
+  background: linear-gradient(to bottom, rgba(240, 248, 255, 0.9), rgba(173, 216, 230, 0.9)), 
               url("https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-position: center;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
 
 /* About Section */
 .about {
-  background-color: rgba(135, 206, 250, 0.8); /* Light Sky Blue */
-  color: #002244; /* Rich Deep Blue */
-  padding: 20px;
-  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(135, 206, 250, 0.9), rgba(100, 149, 237, 0.9));
+  color: #002244;
+  padding: 30px;
+  border-radius: 15px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.about:hover {
+  transform: scale(1.02);
 }
 
 /* Typing Effect */
 .typing {
   color: #004080;
-  border-right: 2px solid #0055aa;
+  border-right: 3px solid #0055aa;
   font-family: 'Pacifico', cursive;
   font-size: 32px;
   font-weight: bold;
@@ -34,10 +46,11 @@
   cursor: pointer;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+
 .insta:hover {
-  color: #0099ff;
+  color: #ff4081;
   transform: scale(1.1);
 }
 
@@ -49,7 +62,8 @@
   border-radius: 50%;
   margin-bottom: 150px;
   margin-right: 160px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s ease;
 }
 
 .myPhoto img {
@@ -57,11 +71,12 @@
   height: 100%;
   display: block;
   border-radius: 50%;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
+
 .myPhoto img:hover {
   transform: scale(1.08);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 /* Gradient Border */
@@ -73,22 +88,48 @@
   right: -5px;
   bottom: -5px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #007bff, #00c3ff, #66e0ff);
+  background: linear-gradient(135deg, #ff7eb3, #ff4081, #e91e63);
   background-size: 300% 300%;
-  animation: moveBorder 3s ease infinite;
-  z-index: -2;
+  animation: borderAnimation 3s infinite linear;
+  z-index: -1;
 }
 
-@keyframes moveBorder {
+@keyframes borderAnimation {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* Mobile View */
+/* Buttons */
+.butt {
+  background: linear-gradient(135deg, #4CAF50, #388E3C);
+  color: white;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.butt:hover {
+  background: linear-gradient(135deg, #66BB6A, #2E7D32);
+  transform: scale(1.08);
+}
+
+/* Grid Layout */
+.skills {
+  display: grid;
+  gap: 40px;
+  margin-top: -250px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  overflow: auto;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .myself {
-    height: 100vh;
+    height: auto;
     padding: 50px 20px;
   }
 
@@ -99,7 +140,11 @@
   .myPhoto {
     width: 250px;
     height: 300px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     margin-right: 0;
+  }
+
+  .about {
+    padding: 20px;
   }
 }

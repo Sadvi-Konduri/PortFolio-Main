@@ -10,9 +10,6 @@ const Connect = () => {
          <Text fontFamily={"new roman"} fontSize={"30px"} fontWeight={"bold"} ml={"20px"} color={"white"}>Feel free to contact me</Text>
          <Box cursor={"pointer"}>
          <Flex gap={"20px"} direction={"row"} cursor={"pointer"} >
-                 <a href="https://www.instagram.com/kethan9s04/" target="_blank" rel="noopener noreferrer">
-                  <BiLogoInstagram size={"30px"} color={"white"} className="insta" />
-                </a>
              <a href="https://www.linkedin.com/in/sadvi-konduri-579b64299/" target="_blank" rel="noopener noreferrer">
                   <BiLogoLinkedin size={"30px"} color={"white"} className="insta" />
                  </a>

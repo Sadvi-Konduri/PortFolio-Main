@@ -3,8 +3,11 @@ import { Link } from "react-scroll"; // Import Link from react-scroll
 import React from "react";
 import "./Header.css";
 import { BiSolidHome, BiMessage } from "react-icons/bi";
+import { AiOutlineFilePdf } from "react-icons/ai";
+import { BsFillAwardFill } from "react-icons/bs";
 import { InfoIcon } from "@chakra-ui/icons";
 import { FaDiagramProject } from "react-icons/fa6";
+
 
 const Header = () => {
   return (
@@ -46,6 +49,16 @@ const Header = () => {
             <FaDiagramProject /> Projects
           </Flex>
         </NavLink>
+        <NavLink to="certificates">
+          <Flex gap="5px" align="center" direction="column">
+            <BsFillAwardFill /> Certificates
+          </Flex>
+        </NavLink>
+        <NavLink to="Resume">
+          <Flex gap="5px" align="center" direction="column">
+            <AiOutlineFilePdf/> Resume
+          </Flex>
+      </NavLink>
         <NavLink to="contact">
           <Flex gap="5px" align="center" direction="column">
             <BiMessage /> Contact

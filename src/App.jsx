@@ -4,11 +4,14 @@ import Header from "./Header";
 import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Certificates from "./components/certificates";
+import Resume from "./components/ResumeDownload";
 import Connect from "./components/contact/Connect";
 import KnowMe from "./components/contact/KnowMe";
 import Skillset from "./components/contact/skillSet";
 import ContactForm from "./components/contact/Contact";
 import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -26,6 +29,12 @@ function App() {
         </Flex>
         <Flex w="100%" id="projects">
           <Projects />
+        </Flex>
+        <Flex w="100%" id="certificates">
+          <Certificates />
+        </Flex>
+        <Flex w="100%" id="Resume">
+          <Resume />
         </Flex>
         <Flex w="100%" id="connect" p="20px">
           <Connect />
