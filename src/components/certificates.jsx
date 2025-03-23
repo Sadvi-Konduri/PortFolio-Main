@@ -20,6 +20,7 @@ const Certificates = () => {
       description: "Certified by AWS",
       certLink: AWS,
     },
+    
     {
       imgUrl: cert5,
       title: "Bronze Certification",

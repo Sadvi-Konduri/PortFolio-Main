@@ -17,7 +17,7 @@ const ResumeDownload = () => {
         padding: "20px", /* Reduced padding */
       }}
     >
-      {/* Resume Text */}
+      {/* Resume Text hh*/}
       <Text
         fontSize="32px" /* Larger font size */
         fontWeight="bold"

@@ -1,5 +1,5 @@
 import { Box, Image, Text, Button, Link, Flex } from "@chakra-ui/react";
-import "./Certificatecss.css";
+import "./certificatecss.css";
 
 const CertificateCard = ({ imgUrl, title, description, certLink }) => {
   return (
